@@ -1,10 +1,13 @@
-# Google Authenticator for Android (Open Source Version)
+# ExtraSecure Authenticator for Android
 
 This project is an open source fork of the Google Authenticator Android app on
 the [Play Store][playstore]. While this fork is open source, the
 [official version][playstore] of the app still remains proprietary. There is no
 guarantee that the [open source repository][Android] will receive any changes
 made upstream (or vice versa).
+
+This repo includes a vulnerability-mitigated authenticator based on Google Authenticator, which
+mitigated some known issues of Google Authenticator.
 
 > Google Authenticator generates 2-Step Verification codes on your phone.
 >
@@ -26,7 +29,7 @@ officially supported Google product.
 
 ## Description
 
-The Google Authenticator project includes implementations of one-time passcode
+The ExtraSecure Authenticator is developed based on Google Authenticator project, which includes implementations of one-time passcode
 generators for several mobile platforms, as well as a Pluggable Authentication
 Module [(PAM)][PAM]. One-time passcodes are generated using open standards
 developed by the [Initiative for Open Authentication (OATH)][OATH] (which is
@@ -45,21 +48,8 @@ Further documentation is available in the [Wiki][].
 
 ## Installation
 
-The APKs for the official version and the open source version of Authenticator
-are hosted separately. Installing the app should be as simple as downloading the
-APK from your desired source.
-
-### Official Google Build
-
-You can install the official (proprietary) version of Google Authenticator from
-the [Google Play Store][playstore].
-
-### Open Source Version
-
-The easiest way to install the open source flavor of Authenticator is to
-download the latest version of the APK from the [releases page][] from the
-GitHub repository. To build the APK from the source code, see the section about
-[building from source](#building-from-source).
+Installing the app should be as simple as installing the
+APK from this repo.
 
 ## Developer Guide
 
@@ -70,8 +60,8 @@ repository.
 
 ### Prerequisites
 
-* [Android SDK][] v28
-* [Android Build Tools][] v28.0.3
+* [Android SDK][] v29
+* [Android Build Tools][] v29.0.3
 * [Bazel][] 0.12.0+
 * [Git][]
 
